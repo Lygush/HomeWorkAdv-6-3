@@ -6,6 +6,9 @@ class My_vector {
     int _size{};
     int _capacity{2};
 public:
+    My_vector(const My_vector&) = delete;
+    My_vector& operator=(const My_vector&) = delete;
+
     My_vector() {
         vec = new T[_capacity] {0};
     }
